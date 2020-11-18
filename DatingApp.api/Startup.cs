@@ -44,6 +44,9 @@ namespace DatingApp.api
                         ValidateIssuer=false
                     };
                 });
+            
+        
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,6 +60,8 @@ namespace DatingApp.api
             // app.UseHttpsRedirection();
 
             app.UseCors(x=>x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
+            app.UseAuthentication();
 
             app.UseRouting();
 

@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.Threading.Tasks;
 using DatingApp.api.Models;
 using Microsoft.EntityFrameworkCore;
@@ -59,6 +60,8 @@ namespace DatingApp.api.Data
                 passwordHash=hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
             }
         }
+
+      
 
         public async  Task<bool> UserExists(string username)
         {
