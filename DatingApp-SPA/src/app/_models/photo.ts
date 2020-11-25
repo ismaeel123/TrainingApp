@@ -4,6 +4,6 @@ export interface Photo {
     id:number;
     url:string;
     description:string;
-    dataAdded:Data;
+    dateAdded:Date;
     isMain:boolean;
 }
